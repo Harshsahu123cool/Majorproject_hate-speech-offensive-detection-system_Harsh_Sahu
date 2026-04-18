@@ -32,32 +32,9 @@ Optional: Claude AI (best quality)
 export ANTHROPIC_API_KEY=your_key_here
 python app.py
 Optional: OCR for images
-# Ubuntu/Debian
-sudo apt install tesseract-ocr
 
-Project Structure
-hate_speech_project_improved/
-├── app.py                  # Flask routes
-├── requirements.txt
-├── models/
-│   ├── adam_classifier.pkl   # Trained LR model (saga/Adam)
-│   └── adam_vectorizer.pkl   # TF-IDF vectorizer
-├── utils/
-│   └── predictor.py          # HateSpeechPredictor class
-└── templates/
-    ├── base.html
-    ├── index.html
-    ├── text_analysis.html
-    └── media_analysis.html
 
-    
-API Endpoints
-Method	Endpoint	Description
-GET	/api/health	Classifier status
-POST	/api/analyze/text	{"text": "..."}
-POST	/api/analyze/batch	{"texts": [...]} (max 50)
-POST	/api/analyze/image	multipart file upload
-POST	/api/analyze/video	multipart file upload
+
 
 
 
